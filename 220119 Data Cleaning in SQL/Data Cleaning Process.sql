@@ -97,9 +97,9 @@ GROUP BY SoldAsVacant;
 
 UPDATE nashville_housing
 SET SoldAsVacant = CASE WHEN SoldAsVacant = 'Y' THEN 'Yes'
-													WHEN SoldAsVacant = 'N' THEN 'No'
-													ELSE SoldAsVacant
-										END
+			WHEN SoldAsVacant = 'N' THEN 'No'
+			ELSE SoldAsVacant
+		   END
 										
 										
 -- Remove duplicates
